@@ -71,12 +71,24 @@ class VectorStore:
         self,
         query_embedding: list[float],
         n_results: int = 5,
+        movie: str | None = None,
     ) -> dict:
         """
         Retrieve the most relevant subtitle chunks.
+
+        If a movie is provided, restrict the search
+        to chunks belonging to that movie.
         """
+
+        where = None
+
+        if movie:
+            where = {
+                "movie": movie
+            }
 
         return self.collection.query(
             query_embeddings=[query_embedding],
             n_results=n_results,
+            where=where,
         )

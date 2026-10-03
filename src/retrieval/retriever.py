@@ -15,9 +15,12 @@ class Retriever:
         self,
         question: str,
         n_results: int = 5,
+        movie: str | None = None,
     ) -> list[dict]:
         """
         Retrieve the most relevant subtitle chunks for a question.
+
+        If a movie is provided, restrict retrieval to that movie.
         """
 
         # Convert the question into an embedding
@@ -29,21 +32,28 @@ class Retriever:
         results = self.vector_store.query(
             query_embedding,
             n_results=n_results,
+            movie=movie,
         )
 
         evidence = []
 
-        for i in range(len(results["documents"][0])):
-            metadata = results["metadatas"][0][i]
+        documents = results["documents"][0]
+        metadatas = results["metadatas"][0]
+        distances = results["distances"][0]
 
+        for document, metadata, distance in zip(
+            documents,
+            metadatas,
+            distances,
+        ):
             evidence.append(
                 {
-                    "text": results["documents"][0][i],
+                    "text": document,
                     "movie": metadata["movie"],
                     "start_time": metadata["start_time"],
                     "end_time": metadata["end_time"],
                     "chunk_id": metadata["chunk_id"],
-                    "score": results["distances"][0][i],
+                    "score": distance,
                 }
             )
 
