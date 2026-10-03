@@ -2,46 +2,24 @@ import chromadb
 
 
 class VectorStore:
-    """
-    ChromaDB vector store for movie subtitle chunks.
-    """
-
     def __init__(
         self,
-        persist_directory: str = "chroma_db",
-        collection_name: str = "movie_subtitles",
+        persist_directory="chroma_db",
+        collection_name="movie_subtitles",
     ):
-        self.client = chromadb.PersistentClient(
-            path=persist_directory
-        )
-
+        self.client = chromadb.PersistentClient(path=persist_directory)
         self.collection = self.client.get_or_create_collection(
             name=collection_name
         )
 
-    def add_chunks(
-        self,
-        chunks: list[dict],
-        embeddings: list[list[float]],
-    ) -> None:
-        """
-        Add subtitle chunks, embeddings, and metadata to ChromaDB.
-        """
-
+    def add_chunks(self, chunks, embeddings):
         if len(chunks) != len(embeddings):
             raise ValueError(
                 "Number of chunks must match number of embeddings."
             )
 
-        ids = [
-            chunk["chunk_id"]
-            for chunk in chunks
-        ]
-
-        documents = [
-            chunk["text"]
-            for chunk in chunks
-        ]
+        ids = [chunk["chunk_id"] for chunk in chunks]
+        documents = [chunk["text"] for chunk in chunks]
 
         metadatas = [
             {
@@ -62,30 +40,31 @@ class VectorStore:
             metadatas=metadatas,
         )
 
-    def count(self) -> int:
-        """Return the number of stored chunks."""
-
+    def count(self):
         return self.collection.count()
 
-    def query(
-        self,
-        query_embedding: list[float],
-        n_results: int = 5,
-        movie: str | None = None,
-    ) -> dict:
+    def get_movies(self) -> list[str]:
         """
-        Retrieve the most relevant subtitle chunks.
-
-        If a movie is provided, restrict the search
-        to chunks belonging to that movie.
+        Return all unique movie identifiers currently stored in ChromaDB.
         """
 
+        results = self.collection.get(
+            include=["metadatas"]
+        )
+
+        movies = {
+            metadata["movie"]
+            for metadata in results["metadatas"]
+            if metadata and metadata.get("movie")
+        }
+
+        return sorted(movies)
+
+    def query(self, query_embedding, n_results=5, movie=None):
         where = None
 
         if movie:
-            where = {
-                "movie": movie
-            }
+            where = {"movie": movie}
 
         return self.collection.query(
             query_embeddings=[query_embedding],
