@@ -1,5 +1,6 @@
 from src.retrieval.retriever import Retriever
 from src.generation.answer_generator import AnswerGenerator
+from src.retrieval.citations import build_citations
 
 
 question = "What does Thanos want from the Avengers?"
@@ -10,7 +11,6 @@ movie = (
 )
 
 
-# Retrieve relevant subtitle evidence
 retriever = Retriever()
 
 evidence = retriever.retrieve(
@@ -20,7 +20,19 @@ evidence = retriever.retrieve(
 )
 
 
-# Generate an answer from the evidence
+print("\nRetrieved Evidence:")
+print("=" * 60)
+
+for i, item in enumerate(evidence, start=1):
+    print(f"\nEvidence {i}")
+    print(
+        f"Time: {item['start_time']} -> "
+        f"{item['end_time']}"
+    )
+    print(f"Distance: {item['score']:.4f}")
+    print(item["text"])
+
+
 generator = AnswerGenerator()
 
 answer = generator.generate(
@@ -29,8 +41,13 @@ answer = generator.generate(
 )
 
 
-print("\nQuestion:")
-print(question)
+citations = build_citations(evidence)
 
-print("\nAnswer:")
+
+print("\n\nAnswer:")
+print("=" * 60)
 print(answer)
+
+print("\nSources:")
+for citation in citations:
+    print(citation)
