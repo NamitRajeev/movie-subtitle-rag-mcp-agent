@@ -41,18 +41,27 @@ def get_vector_store():
     return VectorStore()
 
 
-@st.cache_resource
-def get_agent():
-    return MovieAgent()
-
-
 @st.cache_data
 def get_movies():
     vector_store = get_vector_store()
     return vector_store.get_movies()
 
 
-def run_cached_agent(
+def get_agent():
+    """
+    Create one MovieAgent per Streamlit user session.
+
+    This is important because MovieAgent contains ConversationState.
+    Using st.cache_resource here would share the same conversation
+    state between users.
+    """
+    if "movie_agent" not in st.session_state:
+        st.session_state.movie_agent = MovieAgent()
+
+    return st.session_state.movie_agent
+
+
+def run_agent(
     agent: MovieAgent,
     request: AgentRequest,
 ) -> dict:
@@ -70,7 +79,8 @@ def main():
     st.markdown(
         """
         <div class="subtitle">
-            Ask questions about movies using subtitle-based Retrieval-Augmented Generation.
+            Ask questions about movies using subtitle-based
+            Retrieval-Augmented Generation.
         </div>
         """,
         unsafe_allow_html=True,
@@ -137,6 +147,11 @@ def main():
             placeholder="example@gmail.com",
         )
 
+        st.caption(
+            'For a follow-up, you can enter "Email me that" '
+            "to email your previous answer."
+        )
+
     st.write("")
 
     submit_label = (
@@ -154,16 +169,30 @@ def main():
     if not submitted:
         return
 
-    if not query.strip():
-        st.warning("Please enter a question.")
+    query = query.strip()
+
+    # ---------------------------------------------------------
+    # Basic validation
+    # ---------------------------------------------------------
+
+    if not query:
+        st.warning(
+            "Please enter a question or follow-up request."
+        )
         return
 
     if action == "Email the answer":
-        if not recipient or not recipient.strip():
-            st.warning(
-                "Please enter an email address."
-            )
-            return
+        # Do not require the recipient here for "Email me that".
+        # The agent itself will ask for the recipient and preserve
+        # the pending action in ConversationState.
+        is_follow_up = agent._is_email_follow_up(query)
+
+        if not is_follow_up:
+            if not recipient or not recipient.strip():
+                st.warning(
+                    "Please enter an email address."
+                )
+                return
 
     intent = (
         "information"
@@ -174,17 +203,19 @@ def main():
     request = AgentRequest(
         intent=intent,
         movie=movie,
-        query=query.strip(),
-        recipient=recipient.strip()
-        if recipient
-        else None,
+        query=query,
+        recipient=(
+            recipient.strip()
+            if recipient and recipient.strip()
+            else None
+        ),
     )
 
     with st.spinner(
         "Searching subtitles and generating an answer..."
     ):
         try:
-            result = run_cached_agent(
+            result = run_agent(
                 agent,
                 request,
             )
@@ -200,6 +231,10 @@ def main():
 
     status = result.get("status")
 
+    # ---------------------------------------------------------
+    # Successful result
+    # ---------------------------------------------------------
+
     if status == "success":
 
         st.subheader("💡 Answer")
@@ -207,38 +242,60 @@ def main():
         with st.container(border=True):
             st.write(result["answer"])
 
-        citations = result.get("citations", [])
+        citations = result.get(
+            "citations",
+            [],
+        )
 
         with st.expander(
             f"📚 Sources ({len(citations)})"
         ):
             if citations:
                 for citation in citations:
-                    st.write(f"• {citation}")
+                    st.write(
+                        f"• {citation}"
+                    )
             else:
-                st.write("No citations available.")
+                st.write(
+                    "No citations available."
+                )
 
-        with st.expander("🔧 Debug: Retrieved Evidence"):
-            evidence = result.get("evidence", [])
+        # -----------------------------------------------------
+        # Debug evidence
+        # -----------------------------------------------------
+
+        with st.expander(
+            "🔧 Debug: Retrieved Evidence"
+        ):
+
+            evidence = result.get(
+                "evidence",
+                [],
+            )
 
             if not evidence:
-                st.write("No evidence was returned.")
+                st.write(
+                    "No evidence was returned."
+                )
 
             else:
                 for index, item in enumerate(
                     evidence,
                     start=1,
                 ):
+
                     st.markdown(
                         f"### Evidence {index}"
                     )
 
                     st.write(
-                        f"**Movie:** {item.get('movie')}"
+                        f"**Movie:** "
+                        f"{item.get('movie')}"
                     )
 
                     st.write(
-                        f"**Chunk:** {item.get('chunk_id')}"
+                        f"**Chunk:** "
+                        f"{item.get('chunk_id')}"
                     )
 
                     st.write(
@@ -253,7 +310,8 @@ def main():
                     )
 
                     st.write(
-                        f"**Text:** {item.get('text')}"
+                        f"**Text:** "
+                        f"{item.get('text')}"
                     )
 
                     st.divider()
@@ -266,17 +324,37 @@ def main():
                 )
             )
 
+    # ---------------------------------------------------------
+    # Clarification
+    # ---------------------------------------------------------
+
     elif status == "clarification":
 
         st.warning(
-            f"❓ {result.get('message', 'More information is required.')}"
+            f"❓ "
+            f"{result.get(
+                'message',
+                'More information is required.',
+            )}"
         )
+
+    # ---------------------------------------------------------
+    # Movie not found
+    # ---------------------------------------------------------
 
     elif status == "not_found":
 
         st.error(
-            f"❌ {result.get('message', 'Movie not found.')}"
+            f"❌ "
+            f"{result.get(
+                'message',
+                'Movie not found.',
+            )}"
         )
+
+    # ---------------------------------------------------------
+    # No evidence
+    # ---------------------------------------------------------
 
     elif status == "no_evidence":
 
@@ -287,6 +365,24 @@ def main():
                 "No sufficient evidence was found.",
             )
         )
+
+    # ---------------------------------------------------------
+    # No previous result
+    # ---------------------------------------------------------
+
+    elif status == "no_previous_result":
+
+        st.warning(
+            "⚠️ "
+            + result.get(
+                "message",
+                "There is no previous answer available.",
+            )
+        )
+
+    # ---------------------------------------------------------
+    # Unexpected status
+    # ---------------------------------------------------------
 
     else:
 

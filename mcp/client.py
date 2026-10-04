@@ -30,7 +30,7 @@ async def main():
             result = await session.call_tool(
                 "send_email",
                 {
-                    "recipient": "example@gmail.com",
+                    "recipient": "rpptr0namit@gmail.com",
                     "subject": "MCP Test",
                     "body": "This is a test email from the Movie Subtitle RAG project.",
                 },
