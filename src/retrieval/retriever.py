@@ -1,34 +1,26 @@
+# src/retrieval/retriever.py
+
 from src.retrieval.embedding import EmbeddingModel
+from src.retrieval.reranker import EvidenceReranker
 from src.retrieval.vector_store import VectorStore
 
 
 class Retriever:
-    """
-    Retrieve relevant subtitle chunks from ChromaDB.
-    """
-
     def __init__(self):
         self.embedding_model = EmbeddingModel()
         self.vector_store = VectorStore()
+        self.reranker = EvidenceReranker()
 
     def retrieve(
         self,
-        question: str,
-        n_results: int = 5,
-        movie: str | None = None,
-    ) -> list[dict]:
-        """
-        Retrieve the most relevant subtitle chunks for a question.
-
-        If a movie is provided, restrict retrieval to that movie.
-        """
-
-        # Convert the question into an embedding
+        question,
+        n_results=8,
+        movie=None,
+    ):
         query_embedding = self.embedding_model.encode(
             [question]
         )[0]
 
-        # Search ChromaDB
         results = self.vector_store.query(
             query_embedding,
             n_results=n_results,
@@ -57,4 +49,9 @@ class Retriever:
                 }
             )
 
-        return evidence
+        reranked_evidence = self.reranker.rerank(
+            question=question,
+            evidence=evidence,
+        )
+
+        return reranked_evidence[:3]

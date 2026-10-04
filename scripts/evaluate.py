@@ -1,3 +1,5 @@
+# evaluate.py
+
 from src.agent.movie_resolver import MovieResolver
 from src.generation.answer_generator import AnswerGenerator
 from src.retrieval.citations import build_citations
@@ -80,12 +82,8 @@ def main():
         print(f"TEST {test_number}")
         print("=" * 70)
 
-        print(f"Movie: {movie_name}")
+        print(f"\nMovie: {movie_name}")
         print(f"Question: {question}")
-
-        # -----------------------------------------------------
-        # Movie Resolution
-        # -----------------------------------------------------
 
         movie_result = movie_resolver.resolve(
             movie_name
@@ -98,7 +96,7 @@ def main():
             )
 
             if movie_result.get("candidates"):
-                print("Candidates:")
+                print("\nCandidates:")
 
                 for candidate in movie_result["candidates"]:
                     print(f"• {candidate}")
@@ -107,13 +105,9 @@ def main():
 
         movie = movie_result["movie"]
 
-        # -----------------------------------------------------
-        # Retrieval
-        # -----------------------------------------------------
-
         evidence = retriever.retrieve(
             question=question,
-            n_results=5,
+            n_results=8,
             movie=movie,
         )
 
@@ -121,25 +115,13 @@ def main():
             print("\nNo evidence was retrieved.")
             continue
 
-        # -----------------------------------------------------
-        # Generation
-        # -----------------------------------------------------
-
         answer = answer_generator.generate(
             question=question,
             evidence=evidence,
         )
 
-        # -----------------------------------------------------
-        # Answer
-        # -----------------------------------------------------
-
         print("\nAnswer:")
         print(answer)
-
-        # -----------------------------------------------------
-        # Retrieval quality summary
-        # -----------------------------------------------------
 
         best_distance = min(
             item["score"]
@@ -156,13 +138,7 @@ def main():
             f"{len(evidence)}"
         )
 
-        # -----------------------------------------------------
-        # Citations
-        # -----------------------------------------------------
-
-        citations = build_citations(
-            evidence
-        )
+        citations = build_citations(evidence)
 
         print("\nSources:")
 
