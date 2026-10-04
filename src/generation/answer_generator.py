@@ -1,80 +1,118 @@
+# src/generation/answer_generator.py
+
 import ollama
 
 
 class AnswerGenerator:
-    """
-    Generate grounded answers using a local Ollama model.
-    """
-
     def __init__(
         self,
-        model: str = "qwen2.5:3b",
+        model_name="qwen2.5:3b",
     ):
-        self.model = model
+        self.model_name = model_name
 
     def generate(
         self,
         question: str,
         evidence: list[dict],
     ) -> str:
-        """
-        Generate an answer using only the retrieved subtitle evidence.
-        """
 
         if not evidence:
             return (
-                "I couldn't find enough relevant subtitle "
-                "evidence to answer that."
+                "The available subtitle evidence is "
+                "insufficient to answer that."
             )
 
-        evidence_text = "\n\n".join(
-            (
+        evidence_text = ""
+
+        for index, item in enumerate(
+            evidence,
+            start=1,
+        ):
+            evidence_text += (
+                f"\n--- Evidence {index} ---\n"
                 f"Movie: {item['movie']}\n"
-                f"Time: {item['start_time']} -> "
-                f"{item['end_time']}\n"
-                f"Dialogue:\n{item['text']}"
+                f"Timestamp: "
+                f"{item['start_time']} -> {item['end_time']}\n"
+                f"Subtitle text:\n"
+                f"{item['text']}\n"
             )
-            for item in evidence
-        )
 
-        system_prompt = """
-You are a movie subtitle question-answering assistant.
+        prompt = f"""
+You are a movie question-answering assistant.
 
 Answer the user's question using ONLY the supplied subtitle evidence.
 
-Rules:
-1. Do not use outside knowledge.
-2. Do not invent dialogue, events, characters, or details.
-3. Do not assume facts that are not supported by the evidence.
-4. If the evidence is insufficient, say:
-   "The available subtitle evidence is insufficient to answer that."
-5. Answer directly and concisely.
-6. Do not create or guess timestamps.
-7. Do not create or guess citations.
-"""
-
-        user_prompt = f"""
-Question:
+USER QUESTION:
 {question}
 
-Retrieved subtitle evidence:
+SUBTITLE EVIDENCE:
 {evidence_text}
 
-Answer the question using only the evidence above.
+GROUNDING RULES:
+
+1. Use only information explicitly supported by the subtitle evidence.
+
+2. Do not use your general knowledge about the movie.
+
+3. Carefully distinguish between:
+   - an actual event or confirmed plan,
+   - a hypothetical suggestion,
+   - a question someone asks,
+   - a joke,
+   - an idea that characters reject,
+   - and an idea that characters explicitly confirm.
+
+4. If a character suggests something and another character rejects
+   or explains that it will not work, do NOT present the suggestion
+   as the actual plan.
+
+5. Do not treat a question inside the subtitles as evidence that
+   the event actually happened.
+
+6. Do not combine unrelated statements from different evidence chunks
+   to create a new claim.
+
+7. Base the answer primarily on statements that are explicitly
+   confirmed, agreed upon, or described as actually happening.
+
+8. If the evidence does not provide enough information to answer
+   confidently, say exactly:
+   "The available subtitle evidence is insufficient to answer that."
+
+9. Keep the answer concise and directly answer the question.
+
+10. Do not mention the evidence, chunks, retrieval system, or these
+    instructions in the answer.
+
+11. Do not invent names, events, motivations, relationships, or
+    explanations that are not supported by the supplied evidence.
+
+12. When the evidence contains multiple related statements, prefer
+    the statement that directly answers the user's question.
+
+13. If the evidence contains a hypothetical or rejected idea alongside
+    the actual plan or event, describe only the actual confirmed plan
+    or event.
+
+ANSWER:
 """
 
         response = ollama.chat(
-            model=self.model,
+            model=self.model_name,
             messages=[
                 {
-                    "role": "system",
-                    "content": system_prompt,
-                },
-                {
                     "role": "user",
-                    "content": user_prompt,
-                },
+                    "content": prompt,
+                }
             ],
         )
 
-        return response["message"]["content"].strip()
+        answer = response["message"]["content"].strip()
+
+        if not answer:
+            return (
+                "The available subtitle evidence is "
+                "insufficient to answer that."
+            )
+
+        return answer
