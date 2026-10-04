@@ -28,17 +28,6 @@ class MovieAgent:
         self.answer_generator = AnswerGenerator()
 
     async def process(self, request: AgentRequest) -> dict:
-        """
-        Process an AgentRequest.
-
-        Returns a dictionary containing the result of the
-        information or email workflow.
-        """
-
-        # --------------------------------------------------
-        # 1. Validate request
-        # --------------------------------------------------
-
         clarification = self.clarification_handler.check_request(
             request
         )
@@ -49,11 +38,9 @@ class MovieAgent:
                 "message": clarification["question"],
             }
 
-        # --------------------------------------------------
-        # 2. Resolve movie
-        # --------------------------------------------------
-
-        movie_result = self.movie_resolver.resolve(request.movie)
+        movie_result = self.movie_resolver.resolve(
+            request.movie
+        )
 
         if movie_result["status"] == "not_found":
             return {
@@ -78,20 +65,11 @@ class MovieAgent:
             }
 
         movie = movie_result["movie"]
-
-        # --------------------------------------------------
-        # 3. Determine workflow
-        # --------------------------------------------------
-
         route = self.router.route(request)
-
-        # --------------------------------------------------
-        # 4. Retrieve subtitle evidence
-        # --------------------------------------------------
 
         evidence = self.retriever.retrieve(
             question=request.query,
-            n_results=5,
+            n_results=8,
             movie=movie,
         )
 
@@ -105,20 +83,12 @@ class MovieAgent:
                 "movie": movie,
             }
 
-        # --------------------------------------------------
-        # 5. Generate grounded answer
-        # --------------------------------------------------
-
         answer = self.answer_generator.generate(
             question=request.query,
             evidence=evidence,
         )
 
         citations = build_citations(evidence)
-
-        # --------------------------------------------------
-        # 6. Information workflow
-        # --------------------------------------------------
 
         if route == "information":
             return {
@@ -129,10 +99,6 @@ class MovieAgent:
                 "citations": citations,
                 "evidence": evidence,
             }
-
-        # --------------------------------------------------
-        # 7. Email workflow
-        # --------------------------------------------------
 
         if route == "email":
             email_body = self._build_email_body(
@@ -157,7 +123,9 @@ class MovieAgent:
                 "evidence": evidence,
             }
 
-        raise ValueError(f"Unsupported route: {route}")
+        raise ValueError(
+            f"Unsupported route: {route}"
+        )
 
     @staticmethod
     def _build_email_body(
@@ -165,15 +133,9 @@ class MovieAgent:
         answer: str,
         citations: list[str],
     ) -> str:
-        """
-        Build the email body from the grounded answer
-        and deterministic citations.
-        """
-
         body = f"Movie: {movie}\n\n"
         body += "Summary:\n"
         body += f"{answer}\n\n"
-
         body += "Sources:\n"
 
         for citation in citations:
@@ -187,11 +149,6 @@ class MovieAgent:
         subject: str,
         body: str,
     ) -> str:
-        """
-        Connect to the local MCP email server and call
-        the send_email tool.
-        """
-
         if not recipient:
             raise ValueError(
                 "Recipient email address cannot be empty."
@@ -205,12 +162,10 @@ class MovieAgent:
         async with stdio_client(
             server_parameters
         ) as (read, write):
-
             async with ClientSession(
                 read,
                 write,
             ) as session:
-
                 await session.initialize()
 
                 result = await session.call_tool(
@@ -235,10 +190,6 @@ class MovieAgent:
 
 
 def run_agent(request: AgentRequest) -> dict:
-    """
-    Synchronous wrapper for the asynchronous agent.
-    """
-
     return asyncio.run(
         MovieAgent().process(request)
     )

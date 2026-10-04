@@ -10,7 +10,7 @@ from mcp.client.stdio import stdio_client
 async def main():
     server_parameters = StdioServerParameters(
         command=sys.executable,
-        args=["mcp/server.py"],
+        args=["-u", "mcp/server.py"],
     )
 
     async with stdio_client(server_parameters) as (read, write):
