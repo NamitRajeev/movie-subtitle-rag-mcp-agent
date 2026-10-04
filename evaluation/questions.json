@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Thanos want from the Avengers?",
+    "category": "direct",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 2,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why does Thanos believe his plan is necessary?",
+    "category": "contextual",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 3,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens when Thanos arrives on Titan?",
+    "category": "scene",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 4,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Thanos say about Gamora?",
+    "category": "character",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 5,
+    "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why does Tony Stark build the Iron Man suit?",
+    "category": "contextual",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 6,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does the Avengers' time travel plan involve?",
+    "category": "plot",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 7,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens after Thanos gets the Time Stone?",
+    "category": "temporal",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 8,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What was Thanos's childhood like?",
+    "category": "unsupported",
+    "expected_behavior": "abstain"
+  },
+  {
+    "id": 9,
+    "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Who is Ivan Vanko?",
+    "category": "character",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 10,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why do the Avengers decide to use time travel?",
+    "category": "contextual",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 11,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Doctor Strange do when Thanos attacks Titan?",
+    "category": "character_interaction",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 12,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Peter Quill say about Gamora?",
+    "category": "dialogue",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 13,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Scott Lang explain about the Quantum Realm?",
+    "category": "dialogue",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 14,
+    "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Tony say after he returns home from captivity?",
+    "category": "scene",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 15,
+    "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Ivan Vanko want from Tony Stark?",
+    "category": "character_interaction",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 16,
+    "movie": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Tony tell the Mandarin?",
+    "category": "dialogue",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 17,
+    "movie": "Avengers.Age.of.Ultron.2015.Bluray-1080p.en",
+    "question": "What does Ultron say about humanity?",
+    "category": "character",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 18,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens after Thor arrives in Wakanda?",
+    "category": "temporal",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": 19,
+    "movie": "Spider-Man",
+    "question": "What happens to Spider-Man?",
+    "category": "unknown_movie",
+    "expected_behavior": "movie_not_found"
+  },
+  {
+    "id": 20,
+    "movie": null,
+    "question": "What does Thanos want?",
+    "category": "missing_movie",
+    "expected_behavior": "clarification"
+  }
+]

@@ -1,0 +1,1060 @@
+[
+  {
+    "id": 1,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Thanos want from the Avengers?",
+    "category": "direct",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Thanos wants to bring balance to the universe by wiping out half of all life using the Infinity Stones.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:20:32,829 -> 01:21:31,304]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:03:36,021 -> 01:04:34,705]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:30:47,680 -> 00:31:45,613]"
+    ],
+    "evidence": [
+      {
+        "text": "What master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.\nYeah, that's on Earth, dipshit.\nWhat are you hassling us for?\nSo you're not with Thanos?\nWith Thanos?\nNo, I'm here to kill Thanos.\nHe took my girl. Wait, who are you?\n- We're the Avengers, man. - Oh.\nYou're the ones Thor told us about.\nYou know Thor?\nYeah.\nTall guy, not that good-looking, needed saving.\nWhere is he now?\nThis is the plan? We're gonna hit him with a brick?\nIt's a mold.\nA king's weapon.\nMeant to be the greatest in Asgard.\nIn theory, it could even summon the Bifrost.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:20:32,829",
+        "end_time": "01:21:31,304",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0084",
+        "score": 0.6771712899208069,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.6666666666666666,
+        "rerank_score": 0.8999999999999999
+      },
+      {
+        "text": "Thing's on autopilot.\nCan we control it?\nFly us home?\n- Stark? - Yeah.\nCan you get us home?\nYeah, I heard you.\nI'm thinking I'm not so sure we should.\nUnder no circumstances\ncan we bring the Time Stone to Thanos.\nI don't think you quite understand\nwhat's at stake here.\nWhat? No. It's you who doesn't understand...\nthat Thanos has been inside my head for six years.\nSince he sent an army to New York\nand now he's back.\nAnd I don't know what to do.\nSo I'm not so sure\nif it's a better plan to fight him on our turf or his...\nbut you saw what they did, what they can do.\nAt least on his turf, he's not expecting it.\nSo I say we take the fight to him.\nDoctor.\nDo you concur?\nAll right, Stark. We go to him.\nBut you have to understand...",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:03:36,021",
+        "end_time": "01:04:34,705",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0066",
+        "score": 0.8698965311050415,
+        "question_type": "other",
+        "semantic_score": 0.43212546306533134,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.4024878241457319
+      },
+      {
+        "text": "Who the hell are you guys?\nThe entire time I knew Thanos, he only ever had one goal.\nTo bring balance to the universe\nby wiping out half of all life.\nHe used to kill people planet by planet,\nmassacre by massacre.\nIncluding my own.\nIf he gets all six Infinity Stones...\nhe can do it with the snap of his fingers like this.\nYou seem to know a great deal about Thanos.\nGamora is the daughter of Thanos.\nYour father killed my brother.\nOh, boy.\nStepfather, technically.\nAnd she hates him as much as you do.\nFamilies can be tough.\nBefore my father died,\nhe told me that I had a half-sister...\nthat he imprisoned in Hel.\nAnd then she returned home and stabbed me in the eye.\nSo I had to kill her.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:30:47,680",
+        "end_time": "00:31:45,613",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0032",
+        "score": 0.8765296936035156,
+        "question_type": "other",
+        "semantic_score": 0.4125805188790504,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.38880636321533524
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer introduces new information about Thanos wanting to bring balance to the universe by wiping out half of all life, which is not explicitly supported by the evidence provided."
+  },
+  {
+    "id": 2,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why does Thanos believe his plan is necessary?",
+    "category": "contextual",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Thanos believes his plan is necessary because he believes wiping out half of all life is the only way to bring balance to the universe. He is motivated by the belief that his actions are necessary to restore harmony, as he sees the universe as being tilted unfairly towards the living. His past actions, such as sending an army to New York, support his view that he is necessary to correct this imbalance.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:03:36,021 -> 01:04:34,705]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:30:47,680 -> 00:31:45,613]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:20:32,829 -> 01:21:31,304]"
+    ],
+    "evidence": [
+      {
+        "text": "Thing's on autopilot.\nCan we control it?\nFly us home?\n- Stark? - Yeah.\nCan you get us home?\nYeah, I heard you.\nI'm thinking I'm not so sure we should.\nUnder no circumstances\ncan we bring the Time Stone to Thanos.\nI don't think you quite understand\nwhat's at stake here.\nWhat? No. It's you who doesn't understand...\nthat Thanos has been inside my head for six years.\nSince he sent an army to New York\nand now he's back.\nAnd I don't know what to do.\nSo I'm not so sure\nif it's a better plan to fight him on our turf or his...\nbut you saw what they did, what they can do.\nAt least on his turf, he's not expecting it.\nSo I say we take the fight to him.\nDoctor.\nDo you concur?\nAll right, Stark. We go to him.\nBut you have to understand...",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:03:36,021",
+        "end_time": "01:04:34,705",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0066",
+        "score": 0.8426283597946167,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.6,
+        "rerank_score": 0.8799999999999999
+      },
+      {
+        "text": "Who the hell are you guys?\nThe entire time I knew Thanos, he only ever had one goal.\nTo bring balance to the universe\nby wiping out half of all life.\nHe used to kill people planet by planet,\nmassacre by massacre.\nIncluding my own.\nIf he gets all six Infinity Stones...\nhe can do it with the snap of his fingers like this.\nYou seem to know a great deal about Thanos.\nGamora is the daughter of Thanos.\nYour father killed my brother.\nOh, boy.\nStepfather, technically.\nAnd she hates him as much as you do.\nFamilies can be tough.\nBefore my father died,\nhe told me that I had a half-sister...\nthat he imprisoned in Hel.\nAnd then she returned home and stabbed me in the eye.\nSo I had to kill her.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:30:47,680",
+        "end_time": "00:31:45,613",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0032",
+        "score": 0.8574763536453247,
+        "question_type": "other",
+        "semantic_score": 0.8995569924192359,
+        "keyword_score": 0.4,
+        "rerank_score": 0.7496898946934651
+      },
+      {
+        "text": "What master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.\nYeah, that's on Earth, dipshit.\nWhat are you hassling us for?\nSo you're not with Thanos?\nWith Thanos?\nNo, I'm here to kill Thanos.\nHe took my girl. Wait, who are you?\n- We're the Avengers, man. - Oh.\nYou're the ones Thor told us about.\nYou know Thor?\nYeah.\nTall guy, not that good-looking, needed saving.\nWhere is he now?\nThis is the plan? We're gonna hit him with a brick?\nIt's a mold.\nA king's weapon.\nMeant to be the greatest in Asgard.\nIn theory, it could even summon the Bifrost.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:20:32,829",
+        "end_time": "01:21:31,304",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0084",
+        "score": 0.8973473310470581,
+        "question_type": "other",
+        "semantic_score": 0.6298396874633331,
+        "keyword_score": 0.4,
+        "rerank_score": 0.5608877812243331
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer introduces new information not present in the evidence, specifically Thanos's belief in balancing the universe and his past actions in New York. The evidence does not support these claims."
+  },
+  {
+    "id": 3,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens when Thanos arrives on Titan?",
+    "category": "scene",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "When Thanos arrives on Titan, he brings you face-to-face with the Master of the Mystic Arts. Titan was beautiful but faced extinction, and he offered a solution - genocide.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:46:20,792 -> 01:47:19,267]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:59:53,674 -> 01:00:53,108]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:20:32,829 -> 01:21:31,304]"
+    ],
+    "evidence": [
+      {
+        "text": "Oh, yeah.\nYou're much more of a Thanos.\nI take it the Maw is dead.\nThis day extracts a heavy toll.\nStill, he accomplished his mission.\nYou may regret that.\nHe brought you face-to-face\nwith the Master of the Mystic Arts.\nAnd where do you think he brought you?\nLet me guess. Your home?\nIt was.\nAnd it was beautiful.\nTitan was like most planets.\nToo many mouths, not enough to go around.\nAnd when we faced extinction, I offered a solution.\nGenocide.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:46:20,792",
+        "end_time": "01:47:19,267",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0107",
+        "score": 0.7014452219009399,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.5,
+        "rerank_score": 0.85
+      },
+      {
+        "text": "In all the time I've served Thanos...\nI have never failed him.\nIf I were to reach our rendezvous on Titan...\nwith the Time Stone still attached\nto your vaguely irritating person...\nthere would be judgment.\nGive me...\nThe stone.\nWow, you're a seriously\nloyal piece of outerwear, aren't you?\nYeah, uh, speaking of loyalty...\nWhat the...\n- I know what you're gonna say. - You should not be here.\n- I was gonna go home. - I don't wanna hear it.\nBut it was such a long way down and I just thought",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:59:53,674",
+        "end_time": "01:00:53,108",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0062",
+        "score": 0.8450571894645691,
+        "question_type": "other",
+        "semantic_score": 0.5253441704861865,
+        "keyword_score": 0.5,
+        "rerank_score": 0.5177409193403305
+      },
+      {
+        "text": "What master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.\nYeah, that's on Earth, dipshit.\nWhat are you hassling us for?\nSo you're not with Thanos?\nWith Thanos?\nNo, I'm here to kill Thanos.\nHe took my girl. Wait, who are you?\n- We're the Avengers, man. - Oh.\nYou're the ones Thor told us about.\nYou know Thor?\nYeah.\nTall guy, not that good-looking, needed saving.\nWhere is he now?\nThis is the plan? We're gonna hit him with a brick?\nIt's a mold.\nA king's weapon.\nMeant to be the greatest in Asgard.\nIn theory, it could even summon the Bifrost.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:20:32,829",
+        "end_time": "01:21:31,304",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0084",
+        "score": 0.8887163996696472,
+        "question_type": "other",
+        "semantic_score": 0.381044924487571,
+        "keyword_score": 0.25,
+        "rerank_score": 0.34173144714129966
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The generated answer includes new details not present in the evidence, such as Thanos bringing someone face-to-face with the Master of the Mystic Arts and his offering a solution of genocide to Titan."
+  },
+  {
+    "id": 4,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Thanos say about Gamora?",
+    "category": "character",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Thanos mentions that Gamora is his daughter.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:30:47,680 -> 00:31:45,613]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:19:41,152 -> 01:20:40,545]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:25:03,724 -> 01:26:01,282]"
+    ],
+    "evidence": [
+      {
+        "text": "Who the hell are you guys?\nThe entire time I knew Thanos, he only ever had one goal.\nTo bring balance to the universe\nby wiping out half of all life.\nHe used to kill people planet by planet,\nmassacre by massacre.\nIncluding my own.\nIf he gets all six Infinity Stones...\nhe can do it with the snap of his fingers like this.\nYou seem to know a great deal about Thanos.\nGamora is the daughter of Thanos.\nYour father killed my brother.\nOh, boy.\nStepfather, technically.\nAnd she hates him as much as you do.\nFamilies can be tough.\nBefore my father died,\nhe told me that I had a half-sister...\nthat he imprisoned in Hel.\nAnd then she returned home and stabbed me in the eye.\nSo I had to kill her.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:30:47,680",
+        "end_time": "00:31:45,613",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0032",
+        "score": 0.5505513548851013,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.75,
+        "rerank_score": 0.9249999999999999
+      },
+      {
+        "text": "Stay down, clown.\nDie, blanket of death!\nEverybody stay where you are. Chill the eff out.\nI'm gonna ask you this one time.\nWhere is Gamora?\nYeah. I'll do you one better. Who's Gamora?\nI'll do you one better. Why is Gamora?\nTell me where the girl is or I swear to you\nI'm gonna French fry this little freak.\nLet's do it. You shoot my guy and I'll blast him. Let's go!\nDo it, Quill! I can take it.\n- No, he can't take it! - She's right. You can't.\nOh, yeah? You don't wanna tell me where she is? That's fine.\nI'll kill all three of you\nand I'll beat it out of Thanos myself.\nStarting with you.\nWait, what, Thanos?\nAll right, let me ask you this one time.\nWhat master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:19:41,152",
+        "end_time": "01:20:40,545",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0083",
+        "score": 0.5886327028274536,
+        "question_type": "other",
+        "semantic_score": 0.9047791152208788,
+        "keyword_score": 0.75,
+        "rerank_score": 0.8583453806546151
+      },
+      {
+        "text": "Welcome, Thanos, son of Alars.\nGamora, daughter of Thanos.\nYou know us?\nIt is my curse to know all who journey here.\nWhere is the Soul Stone?\nYou should know...\nit extracts a terrible price.\nI am prepared.\nWe all think that at first.\nWe are all wrong.\nHow is it you know this place so well?\nA lifetime ago, I, too, sought the stones.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:25:03,724",
+        "end_time": "01:26:01,282",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0089",
+        "score": 0.6801303029060364,
+        "question_type": "other",
+        "semantic_score": 0.6759930321274487,
+        "keyword_score": 0.5,
+        "rerank_score": 0.623195122489214
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The answer 'Thanos mentions that Gamora is his daughter' is not directly supported by the evidence."
+  },
+  {
+    "id": 5,
+    "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why does Tony Stark build the Iron Man suit?",
+    "category": "contextual",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Tony Stark builds the Iron Man suit because he has a passion for technology and innovation. Even from a young age, he demonstrated exceptional skills, starting with building a circuit board at age four and an engine at age six. By age 17, he graduated summa cum laude from MIT. Stark's father, Howard Stark, was a legendary weapons developer, and after Howard's passing, Tony takes the reins as the new CEO of Stark Industries. With the company's technological expertise and resources, Tony develops advanced weapons and robotics. The Iron Man suit is his masterpiece, designed to ensure freedom and protect America.",
+    "citations": [
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 01:26:05,244 -> 01:27:01,342]",
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 00:04:20,553 -> 00:05:19,862]",
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 01:26:55,002 -> 01:27:50,975]"
+    ],
+    "evidence": [
+      {
+        "text": "Welcome.\nCompliments of Tony Stark.\nIf you'd killed him when you were supposed to, you'd still have a face.\nYou paid us trinkets to kill a prince.\nShow me the weapon.\nCome. Leave your guards outside.\nHis escape bore unexpected fruit.\nSo this is how he did it.\nThis is only a first, crude effort.\nStark has perfected his design.\nHe has made a masterpiece of death.\nA man with a dozen of these can rule all of Asia.",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:26:05,244",
+        "end_time": "01:27:01,342",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0081",
+        "score": 0.8676199913024902,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.5,
+        "rerank_score": 0.85
+      },
+      {
+        "text": "Tony Stark.\nVisionary. Genius.\nAmerican patriot.\nEven from an early age,\nthe son of legendary weapons developer Howard Stark\nquickly stole the spotlight with his brilliant and unique mind.\nAt age four, he built his first circuit board.\nAt age six, his first engine.\nAnd at 17, he graduated summa cum laude from MIT.\nThen, the passing of a titan.\nHoward Stark's lifelong friend and ally, Obadiah Stane,\nsteps in to help fill the gap left by the legendary founder,\nuntil, at age 21, the prodigal son returns\nand is anointed the new CEO of Stark Industries.\nWith the keys to the kingdom,\nTony ushers in a new era for his father's legacy,\ncreating smarter weapons, advanced robotics, satellite targeting.\nToday, Tony Stark has changed the face of the weapons industry\nby ensuring freedom and protecting America",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:04:20,553",
+        "end_time": "00:05:19,862",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0004",
+        "score": 0.8734070658683777,
+        "question_type": "other",
+        "semantic_score": 0.9509328673123981,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.7656530071186787
+      },
+      {
+        "text": "He has made a masterpiece of death.\nA man with a dozen of these can rule all of Asia.\nAnd you dream of Stark's throne.\nWe have a common enemy.\nIf we are still in business,\nI will give you these designs\nas a gift.\nAnd in turn,\nI hope you'll repay me with a gift of iron soldiers.\nThis is the only gift you shall receive.\nTechnology.",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:26:55,002",
+        "end_time": "01:27:50,975",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0082",
+        "score": 0.8866300582885742,
+        "question_type": "other",
+        "semantic_score": 0.838818479252938,
+        "keyword_score": 0.5,
+        "rerank_score": 0.7371729354770565
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The generated answer includes additional information not present in the evidence, such as Tony Stark's motivations for creating the Iron Man suit based on his upbringing and education."
+  },
+  {
+    "id": 6,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does the Avengers' time travel plan involve?",
+    "category": "plot",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "The Avengers' time travel plan involves going back in time to prevent Thanos from getting the Infinity Stones, but they acknowledge that changing the past doesn't necessarily change the future. They plan to go back and get the stones before Thanos does, ensuring he doesn't get them. However, the plan is complicated by the fact that they have to follow strict rules of time travel and cannot communicate with their past selves.",
+    "citations": [
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:58:36,514 -> 00:59:34,488]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:35:06,480 -> 00:36:04,455]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:31:12,872 -> 00:32:10,679]"
+    ],
+    "evidence": [
+      {
+        "text": "I'll do it.\nClint, now you're gonna feel a little discombobulated from the chronoshift.\n- Don't worry about that. - Wait a second. Let me ask you something.\nIf we can do this, you know...\ngo back in time, why don't we just find baby Thanos?\nYou know, and...\n- First of all, that's horrible. - It's Thanos.\nAnd secondly, time doesn't work that way.\nChanging the past doesn't change the future.\nLook, we go back, we get the stones before Thanos gets them...\nThanos doesn't have the stones. Problem solved.\n- Bingo. - That's not how it works.\n- Well, that's what I heard. - Wait, but who? Who told you that?\nStar Trek, Terminator, Timecop...\n-Time After Time. - Quantum Leap.\n-Wrinkle in Time, Somewhere in Time. - Hot Tub Time Machine.\nHot Tub Time Machine. Bill and Ted's Excellent Adventure.\nBasically, any movie that deals with time travel.\nDie Hard. No, that's not one.\nThis is known.\nI don't know why everyone believes that, but that isn't true.\nThink about it. If you travel to the past...\nthat past becomes your future...\nand your former present becomes the past...",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:58:36,514",
+        "end_time": "00:59:34,488",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0056",
+        "score": 1.081410527229309,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.4,
+        "rerank_score": 0.82
+      },
+      {
+        "text": "if there's no logical, tangible way for me to safely execute said time heist.\nI believe the most likely outcome will be our collective demise.\nNot if we strictly follow the rules of time travel.\nAll right? It means no talking to our past selves...\nno betting on sporting events.\nI'm gonna stop you right there, Scott.\nAre you seriously telling me that your plan to save the universe...\nis based on Back to the Future?\n- Is it? - No.\nGood. You had me worried there. 'Cause that would be horseshit.\nThat's not how quantum physics works.\nTony.\nWe have to take a stand.\nWe did stand. And yet, here we are.\nI know you got a lot on the line.\nYou got a wife, a daughter.\nBut I lost someone very important to me.\nA lotta people did.\nAnd now, now we have a chance to bring her back...\nto bring everyone back, and you're telling me that you won't even...\nThat's right, Scott. I won't even.",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:35:06,480",
+        "end_time": "00:36:04,455",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0031",
+        "score": 1.14967679977417,
+        "question_type": "other",
+        "semantic_score": 0.5994688578204985,
+        "keyword_score": 0.6,
+        "rerank_score": 0.599628200474349
+      },
+      {
+        "text": "Only to make conversation.\nAll right, so...\nfive years ago, right before...\nThanos...\nI was in a place called the quantum realm.\nThe quantum realm is like its own microscopic universe.\nTo get in there, you have to be incredibly small.\nHope. She's my...\nShe was my...\nShe was supposed to pull me out.\nAnd then Thanos happened...\nand I got stuck in there.\nI'm sorry, that must have been a very long five years.\nYeah, but that's just it.\nIt wasn't.\nFor me, it was five hours.\nSee, the rules of the quantum realm aren't like they are up here.\nEverything is unpredictable.\nIs that anybody's sandwich?\nI'm starving.\nScott.\nWhat are you talking about?\nSo...\nwhat I'm saying is...\ntime works differently in the quantum realm.\nThe only problem is right now we don't have a way to navigate it.\nBut what if we did?",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:31:12,872",
+        "end_time": "00:32:10,679",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0027",
+        "score": 1.2029566764831543,
+        "question_type": "other",
+        "semantic_score": 0.2868657365733426,
+        "keyword_score": 0.2,
+        "rerank_score": 0.26080601560133976
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer contains additional details not supported by the evidence, such as specific names (Clint, Star Trek, Timecop) and the exact quote 'That's not how quantum physics works.' which are not present in the evidence."
+  },
+  {
+    "id": 7,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens after Thanos gets the Time Stone?",
+    "category": "temporal",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "After Thanos gets the Time Stone, Vision suggests that they need to eliminate the stone to prevent Thanos from obtaining it. This is seen as the only way to ensure that Thanos cannot get the Time Stone.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:38:08,300 -> 01:38:44,461]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:56:50,491 -> 00:57:48,591]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:33:18,080 -> 00:34:16,639]"
+    ],
+    "evidence": [
+      {
+        "text": "Where's your other friend?\nYou will pay for his life with yours.\nThanos will have that stone.\nThat's not gonna happen.\nYou are in Wakanda now.\nThanos will have nothing but dust and blood.\nWe have blood to spare.\nThey surrender?\nNot exactly.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:38:08,300",
+        "end_time": "01:38:44,461",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0101",
+        "score": 0.758507490158081,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.7999999999999999
+      },
+      {
+        "text": "Vision's stone.\nThen we have to protect it.\nNo, we have to destroy it.\nI've been giving a good deal of thought\nto this entity in my head.\nAbout its nature.\nBut also its composition.\nI think if it were exposed\nto a sufficiently powerful energy source...\nsomething very similar to its own signature, perhaps...\nits molecular integrity could fail.\nYeah, and you with it.\nWe're not having this conversation.\nEliminating the stone is the only way\nto be certain that Thanos can't get it.\nThat's too high a price.\nOnly you have the power to pay it.\nThanos threatens half the universe.\nOne life cannot stand in the way of defeating him.\nBut it should.\nWe don't trade lives, Vision.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:56:50,491",
+        "end_time": "00:57:48,591",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0059",
+        "score": 0.7755168676376343,
+        "question_type": "other",
+        "semantic_score": 0.9091006966918603,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.7363704876843021
+      },
+      {
+        "text": "the Reality Stone's been safely stored there\nwith a man called the Collector.\nIf it's with the Collector, then it's not safe.\nOnly an idiot would give that man a stone.\n- Or a genius. - How do you know...\nhe's not going for one of the other stones?\nThere are six stones out there.\nThanos already has the Power Stone...\nbecause he stole it last week when he decimated Xandar.\nHe stole the Space Stone from me...\nwhen he destroyed my ship and slaughtered half my people.\nThe Time and Mind Stones are safe on Earth.\nThey're with the Avengers.\n- The Avengers? - Earth's mightiest heroes.\nLike Kevin Bacon?\nHe may be on the team. I don't know.\nI haven't been there in a while.\nAs for the Soul Stone, well, no one's ever seen that.\nNo one even knows where it is.\nTherefore Thanos can't get it.\nTherefore he's going to Knowhere.\nHence he'll be getting the Reality Stone.\nYou're welcome.\nThen we have to go to Knowhere now.\nWrong. Where we have to go is Nidavellir.\n- That's a made-up word. - All words are made up.\nNidavellir is real? Seriously?\nThat place is a legend.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:33:18,080",
+        "end_time": "00:34:16,639",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0035",
+        "score": 0.8215299248695374,
+        "question_type": "other",
+        "semantic_score": 0.6632036995509981,
+        "keyword_score": 0.5,
+        "rerank_score": 0.6142425896856987
+      }
+    ],
+    "answer_correct": true,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The answer is directly supported by the evidence, which shows Thanos needing to eliminate the Time Stone to prevent it from falling into his hands."
+  },
+  {
+    "id": 8,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What was Thanos's childhood like?",
+    "category": "unsupported",
+    "expected_behavior": "abstain",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "The available subtitle evidence is insufficient to answer that.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:30:47,680 -> 00:31:45,613]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:20:32,829 -> 01:21:31,304]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:59:53,674 -> 01:00:53,108]"
+    ],
+    "evidence": [
+      {
+        "text": "Who the hell are you guys?\nThe entire time I knew Thanos, he only ever had one goal.\nTo bring balance to the universe\nby wiping out half of all life.\nHe used to kill people planet by planet,\nmassacre by massacre.\nIncluding my own.\nIf he gets all six Infinity Stones...\nhe can do it with the snap of his fingers like this.\nYou seem to know a great deal about Thanos.\nGamora is the daughter of Thanos.\nYour father killed my brother.\nOh, boy.\nStepfather, technically.\nAnd she hates him as much as you do.\nFamilies can be tough.\nBefore my father died,\nhe told me that I had a half-sister...\nthat he imprisoned in Hel.\nAnd then she returned home and stabbed me in the eye.\nSo I had to kill her.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:30:47,680",
+        "end_time": "00:31:45,613",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0032",
+        "score": 0.8576182723045349,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.5,
+        "rerank_score": 0.85
+      },
+      {
+        "text": "What master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.\nYeah, that's on Earth, dipshit.\nWhat are you hassling us for?\nSo you're not with Thanos?\nWith Thanos?\nNo, I'm here to kill Thanos.\nHe took my girl. Wait, who are you?\n- We're the Avengers, man. - Oh.\nYou're the ones Thor told us about.\nYou know Thor?\nYeah.\nTall guy, not that good-looking, needed saving.\nWhere is he now?\nThis is the plan? We're gonna hit him with a brick?\nIt's a mold.\nA king's weapon.\nMeant to be the greatest in Asgard.\nIn theory, it could even summon the Bifrost.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:20:32,829",
+        "end_time": "01:21:31,304",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0084",
+        "score": 1.0823580026626587,
+        "question_type": "other",
+        "semantic_score": 0.31732213336935167,
+        "keyword_score": 0.5,
+        "rerank_score": 0.37212549335854617
+      },
+      {
+        "text": "In all the time I've served Thanos...\nI have never failed him.\nIf I were to reach our rendezvous on Titan...\nwith the Time Stone still attached\nto your vaguely irritating person...\nthere would be judgment.\nGive me...\nThe stone.\nWow, you're a seriously\nloyal piece of outerwear, aren't you?\nYeah, uh, speaking of loyalty...\nWhat the...\n- I know what you're gonna say. - You should not be here.\n- I was gonna go home. - I don't wanna hear it.\nBut it was such a long way down and I just thought",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:59:53,674",
+        "end_time": "01:00:53,108",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0062",
+        "score": 1.047780990600586,
+        "question_type": "other",
+        "semantic_score": 0.42235456707114266,
+        "keyword_score": 0.25,
+        "rerank_score": 0.37064819694979984
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer states that the evidence is insufficient, which is correct. However, the answer does not provide any information about Thanos's childhood, making it unsupported by the evidence provided."
+  },
+  {
+    "id": 9,
+    "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Who is Ivan Vanko?",
+    "category": "character",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Ivan Vanko is a Soviet physicist who defected to the United States in 1963. However, he was accused of espionage and was deported in 1967. His son, Ivan, is also a physicist and was convicted of selling Soviet-era weapons-grade plutonium to Pakistan.",
+    "citations": [
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 00:46:40,131 -> 00:47:37,647]",
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 00:00:58,809 -> 00:01:28,839]",
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 01:37:33,098 -> 01:38:23,273]"
+    ],
+    "evidence": [
+      {
+        "text": "- A bird? You want a bird? - I want my bird.\nI can get you a bird. I can get you 10 birds.\nI want my bird.\nWell, okay. Nothing's impossible. I could...\nAre we talking about... Is this a bird back in Russia?\nYes, but the fundamentals of the company are still very, very strong\n- despite the events in Monaco. - Yes, of course.\n- The AP wants a quote. - Don't tell him. Fax them...\nWhere is he?\n- He doesn't want to be disturbed. - He's downstairs.\n- ...what happened in Monaco? - Yes, but...\nBut his continuing erratic behavior\nmay lead many people to ask themselves,\n\"Can this man still protect us?\"\nIron Man never stopped protecting us. The events in Monaco proved that.\nQuery complete, sir. Anton Vanko was a Soviet physicist\nwho defected to the United States in 1963.\nHowever, he was accused of espionage and was deported in 1967.\nHis son, Ivan, who is also a physicist,\nwas convicted of selling Soviet-era weapons-grade plutonium to Pakistan,",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:46:40,131",
+        "end_time": "00:47:37,647",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0042",
+        "score": 1.003665804862976,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 1.0,
+        "rerank_score": 1.0
+      },
+      {
+        "text": "all the mistakes I've made, largely public.\nThe truth is\nI am Iron Man.\nIvan.\nVanya.",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:00:58,809",
+        "end_time": "00:01:28,839",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0002",
+        "score": 1.2058746814727783,
+        "question_type": "other",
+        "semantic_score": 0.6136066418843548,
+        "keyword_score": 0.5,
+        "rerank_score": 0.5795246493190483
+      },
+      {
+        "text": "- What's going on? What's happening? - The software's been overridden.\nWhat? What do you mean it's been overridden?\n- What does that mean? - I think he slaved the drones.\nThat's impossible.\n- Call the guards. - All the phones are down, sir.\nWell, then call their... Call their cells.\nTheir cell phones are not working, either, sir.\nHe's locked us out of the mainframe.\nWho's locked you out of the mainframe?\nPlease, please, go away. Go away.\n- I've got this handled. - Have you now?\nYes, I do.\nIn fact, if your guy hadn't showed up, this wouldn't be happening.\nSo please, now go away. Thank you.\nListen, we got to get these bitches out of here.\nWhat?\nYou tell me who's behind this.\n- Who's behind this? - Ivan. Ivan Vanko.\n- Where is he? - He's at my facility.\n- I need NYPD, please. - No, no, no!\n- Command Central. - No, no, honey.\n- Don't call the authorities. - Okay. Right away. Right away.\nStep aside. Step aside.\nTell me everything you know. Go.",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:37:33,098",
+        "end_time": "01:38:23,273",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0094",
+        "score": 1.4092371463775635,
+        "question_type": "other",
+        "semantic_score": 0.22500893516317577,
+        "keyword_score": 1.0,
+        "rerank_score": 0.457506254614223
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The answer includes information not supported by the evidence, such as Ivan Vanko being a physicist and his son being convicted of selling weapons-grade plutonium to Pakistan."
+  },
+  {
+    "id": 10,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "Why do the Avengers decide to use time travel?",
+    "category": "contextual",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "The Avengers decide to use time travel because they want to find baby Thanos, who is the key to stopping the villainous Thanos from getting the Infinity Stones before he can use them to destroy the universe. They believe they can go back in time to find baby Thanos, but they later realize that changing the past won't change the future.",
+    "citations": [
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:45:12,002 -> 00:46:11,227]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:58:36,514 -> 00:59:34,488]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:59:26,856 -> 00:59:52,339]"
+    ],
+    "evidence": [
+      {
+        "text": "Or just me me.\nTime travel!\nWhat?\nI see this as an absolute win.\nWhy the long face?",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:45:12,002",
+        "end_time": "00:46:11,227",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0042",
+        "score": 1.0069094896316528,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.4,
+        "rerank_score": 0.82
+      },
+      {
+        "text": "I'll do it.\nClint, now you're gonna feel a little discombobulated from the chronoshift.\n- Don't worry about that. - Wait a second. Let me ask you something.\nIf we can do this, you know...\ngo back in time, why don't we just find baby Thanos?\nYou know, and...\n- First of all, that's horrible. - It's Thanos.\nAnd secondly, time doesn't work that way.\nChanging the past doesn't change the future.\nLook, we go back, we get the stones before Thanos gets them...\nThanos doesn't have the stones. Problem solved.\n- Bingo. - That's not how it works.\n- Well, that's what I heard. - Wait, but who? Who told you that?\nStar Trek, Terminator, Timecop...\n-Time After Time. - Quantum Leap.\n-Wrinkle in Time, Somewhere in Time. - Hot Tub Time Machine.\nHot Tub Time Machine. Bill and Ted's Excellent Adventure.\nBasically, any movie that deals with time travel.\nDie Hard. No, that's not one.\nThis is known.\nI don't know why everyone believes that, but that isn't true.\nThink about it. If you travel to the past...\nthat past becomes your future...\nand your former present becomes the past...",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:58:36,514",
+        "end_time": "00:59:34,488",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0056",
+        "score": 1.1603927612304688,
+        "question_type": "other",
+        "semantic_score": 0.5008445831341575,
+        "keyword_score": 0.4,
+        "rerank_score": 0.4705912081939102
+      },
+      {
+        "text": "Think about it. If you travel to the past...\nthat past becomes your future...\nand your former present becomes the past...\nwhich can't now be changed by your new future.\nExactly.\nSo Back to the Future is a bunch of bullshit?\nAll right, Clint.\nWe're going in three, two...\none.",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:59:26,856",
+        "end_time": "00:59:52,339",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0057",
+        "score": 1.1637046337127686,
+        "question_type": "other",
+        "semantic_score": 0.4900737735710805,
+        "keyword_score": 0.2,
+        "rerank_score": 0.4030516414997563
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The generated answer does not directly address why the Avengers decide to use time travel, only providing context about their plan."
+  },
+  {
+    "id": 11,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Doctor Strange do when Thanos attacks Titan?",
+    "category": "character_interaction",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Doctor Strange takes Thanos face-to-face on Titan when Thanos attacks.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:46:20,792 -> 01:47:19,267]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:03:36,021 -> 01:04:34,705]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:59:53,674 -> 01:00:53,108]"
+    ],
+    "evidence": [
+      {
+        "text": "Oh, yeah.\nYou're much more of a Thanos.\nI take it the Maw is dead.\nThis day extracts a heavy toll.\nStill, he accomplished his mission.\nYou may regret that.\nHe brought you face-to-face\nwith the Master of the Mystic Arts.\nAnd where do you think he brought you?\nLet me guess. Your home?\nIt was.\nAnd it was beautiful.\nTitan was like most planets.\nToo many mouths, not enough to go around.\nAnd when we faced extinction, I offered a solution.\nGenocide.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:46:20,792",
+        "end_time": "01:47:19,267",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0107",
+        "score": 0.9159177541732788,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.4,
+        "rerank_score": 0.82
+      },
+      {
+        "text": "Thing's on autopilot.\nCan we control it?\nFly us home?\n- Stark? - Yeah.\nCan you get us home?\nYeah, I heard you.\nI'm thinking I'm not so sure we should.\nUnder no circumstances\ncan we bring the Time Stone to Thanos.\nI don't think you quite understand\nwhat's at stake here.\nWhat? No. It's you who doesn't understand...\nthat Thanos has been inside my head for six years.\nSince he sent an army to New York\nand now he's back.\nAnd I don't know what to do.\nSo I'm not so sure\nif it's a better plan to fight him on our turf or his...\nbut you saw what they did, what they can do.\nAt least on his turf, he's not expecting it.\nSo I say we take the fight to him.\nDoctor.\nDo you concur?\nAll right, Stark. We go to him.\nBut you have to understand...",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:03:36,021",
+        "end_time": "01:04:34,705",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0066",
+        "score": 1.0062556266784668,
+        "question_type": "other",
+        "semantic_score": 0.5390363675183261,
+        "keyword_score": 0.4,
+        "rerank_score": 0.49732545726282823
+      },
+      {
+        "text": "In all the time I've served Thanos...\nI have never failed him.\nIf I were to reach our rendezvous on Titan...\nwith the Time Stone still attached\nto your vaguely irritating person...\nthere would be judgment.\nGive me...\nThe stone.\nWow, you're a seriously\nloyal piece of outerwear, aren't you?\nYeah, uh, speaking of loyalty...\nWhat the...\n- I know what you're gonna say. - You should not be here.\n- I was gonna go home. - I don't wanna hear it.\nBut it was such a long way down and I just thought",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:59:53,674",
+        "end_time": "01:00:53,108",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0062",
+        "score": 1.017211675643921,
+        "question_type": "other",
+        "semantic_score": 0.4831313523933266,
+        "keyword_score": 0.4,
+        "rerank_score": 0.4581919466753286
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The generated answer does not directly answer the question based on the provided evidence. The evidence only confirms Doctor Strange being on Titan due to Thanos' attack, but does not specify what he does. The answer introduces new elements such as 'face-to-face' which is not explicitly supported by the evidence."
+  },
+  {
+    "id": 12,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Peter Quill say about Gamora?",
+    "category": "dialogue",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Peter Quill asks multiple times where Gamora is and threatens to kill her if she is not told where she is.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:19:41,152 -> 01:20:40,545]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 00:29:05,620 -> 00:30:02,635]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:50:52,688 -> 01:51:52,039]"
+    ],
+    "evidence": [
+      {
+        "text": "Stay down, clown.\nDie, blanket of death!\nEverybody stay where you are. Chill the eff out.\nI'm gonna ask you this one time.\nWhere is Gamora?\nYeah. I'll do you one better. Who's Gamora?\nI'll do you one better. Why is Gamora?\nTell me where the girl is or I swear to you\nI'm gonna French fry this little freak.\nLet's do it. You shoot my guy and I'll blast him. Let's go!\nDo it, Quill! I can take it.\n- No, he can't take it! - She's right. You can't.\nOh, yeah? You don't wanna tell me where she is? That's fine.\nI'll kill all three of you\nand I'll beat it out of Thanos myself.\nStarting with you.\nWait, what, Thanos?\nAll right, let me ask you this one time.\nWhat master do you serve?\nWhat master do I serve?\nWhat am I supposed to say, \"Jesus\"?\nYou're from Earth.\nI'm not from Earth, I'm from Missouri.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:19:41,152",
+        "end_time": "01:20:40,545",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0083",
+        "score": 0.840333878993988,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.6,
+        "rerank_score": 0.8799999999999999
+      },
+      {
+        "text": "What happened?\nOh, my God.\nLooks like we're not getting paid.\nWipers! Wipers!\nGet it off.\nHow the hell is this dude still alive?\nHe is not a dude.\nYou're a dude.\nThis... This is a man.\nA handsome, muscular man.\nI'm muscular.\nBut who are you kidding, Quill?\nYou're one sandwich away from fat.\nYeah, right.\nIt's true, Quill. You have put on weight.\nWhat?\nGamora, do you think I'm...\nHe is anxious, angry.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:29:05,620",
+        "end_time": "00:30:02,635",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0030",
+        "score": 0.8686327934265137,
+        "question_type": "other",
+        "semantic_score": 0.8883529403188397,
+        "keyword_score": 0.4,
+        "rerank_score": 0.7418470582231877
+      },
+      {
+        "text": "She can't hold him much longer. Let's go.\nWe gotta open his fingers to get it off.\nI thought you'd be hard to catch.\nFor the record, this was my plan.\nYou're not so strong now, huh?\nWhere is Gamora?\nMy Gamora.\nNo, bullshit!\nWhere is she?\nHe is in anguish.\nGood.\nHe... He mourns.\nWhat does this monster have to mourn?\nGamora.\nWhat?\nHe took her to Vormir.\nHe came back with the Soul Stone.\nBut she didn't.\nOkay, Quill, you gotta cool it right now. You understand?\nDon't, don't. Don't engage. We almost got this off!\nTell me she's lying.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:50:52,688",
+        "end_time": "01:51:52,039",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0112",
+        "score": 0.9502207040786743,
+        "question_type": "other",
+        "semantic_score": 0.5664660230110375,
+        "keyword_score": 0.4,
+        "rerank_score": 0.5165262161077262
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The answer does not directly state what Peter Quill says about Gamora, only what he asks and threatens about Gamora."
+  },
+  {
+    "id": 13,
+    "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Scott Lang explain about the Quantum Realm?",
+    "category": "dialogue",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Scott Lang explains that time works differently in the Quantum Realm. He mentions that it is unpredictable and that he spent five hours there instead of five years.",
+    "citations": [
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:31:12,872 -> 00:32:10,679]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:30:21,362 -> 00:31:20,171]",
+      "[Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng — 00:32:03,631 -> 00:32:53,597]"
+    ],
+    "evidence": [
+      {
+        "text": "Only to make conversation.\nAll right, so...\nfive years ago, right before...\nThanos...\nI was in a place called the quantum realm.\nThe quantum realm is like its own microscopic universe.\nTo get in there, you have to be incredibly small.\nHope. She's my...\nShe was my...\nShe was supposed to pull me out.\nAnd then Thanos happened...\nand I got stuck in there.\nI'm sorry, that must have been a very long five years.\nYeah, but that's just it.\nIt wasn't.\nFor me, it was five hours.\nSee, the rules of the quantum realm aren't like they are up here.\nEverything is unpredictable.\nIs that anybody's sandwich?\nI'm starving.\nScott.\nWhat are you talking about?\nSo...\nwhat I'm saying is...\ntime works differently in the quantum realm.\nThe only problem is right now we don't have a way to navigate it.\nBut what if we did?",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:31:12,872",
+        "end_time": "00:32:10,679",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0027",
+        "score": 0.9754183292388916,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.6666666666666666,
+        "rerank_score": 0.8999999999999999
+      },
+      {
+        "text": "I'm still trying to be better.\nI think we both need to get a life.\nYou first.\nHi, hi! Is anyone home?\nThis is Scott Lang.\nWe met a few years ago at the airport...\nin Germany?\nI was the guy that got really big. I had a mask on.\n- You wouldn't recognize me. - Is this an old message?\nAnt-Man? I know you know that.\n- It's the front gate. - I really need to talk to you guys.\nScott.\nAre you okay?\nYeah.\nHave either of you guys ever studied quantum physics?\nOnly to make conversation.\nAll right, so...\nfive years ago, right before...",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:30:21,362",
+        "end_time": "00:31:20,171",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0026",
+        "score": 1.01008939743042,
+        "question_type": "other",
+        "semantic_score": 0.930678291709768,
+        "keyword_score": 0.5,
+        "rerank_score": 0.8014748041968376
+      },
+      {
+        "text": "time works differently in the quantum realm.\nThe only problem is right now we don't have a way to navigate it.\nBut what if we did?\nI can't stop thinking about it. What if we could somehow control the chaos...\nand we could navigate it?\nWhat if there was a way...\nthat we could enter the quantum realm at a certain point in time...\nbut then exit the quantum realm at another point in time?\nLike...\n- Like before Thanos. - Wait.\nAre you talking about a time machine?\nNo. No, of course not. No, not a time machine.\nThis is more like a...\nYeah. Like a time machine.\nI know, it's crazy. It's crazy.\nBut I can't stop thinking about it. There's gotta be...\nsome way...\n- It's crazy. - Scott.\nI get emails from a raccoon...\nso nothing sounds crazy anymore.\nSo, who do we talk to about this?",
+        "movie": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:32:03,631",
+        "end_time": "00:32:53,597",
+        "chunk_id": "Avengers.Endgame.2019.1080p.BluRay.x265-YAWNTiC_eng_0028",
+        "score": 1.1014821529388428,
+        "question_type": "other",
+        "semantic_score": 0.7479466290394086,
+        "keyword_score": 0.6666666666666666,
+        "rerank_score": 0.7235626403275859
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The answer does not directly and accurately answer the question about what Scott Lang explains about the Quantum Realm."
+  },
+  {
+    "id": 14,
+    "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Tony say after he returns home from captivity?",
+    "category": "scene",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Tony says \"I refuse.\" after he returns home from captivity.",
+    "citations": [
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 00:20:12,087 -> 00:20:31,147]",
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 01:32:36,969 -> 01:33:35,194]",
+      "[Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng — 01:40:11,631 -> 01:41:07,479]"
+    ],
+    "evidence": [
+      {
+        "text": "This one.\nI refuse.\nTony!",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:20:12,087",
+        "end_time": "00:20:31,147",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0021",
+        "score": 0.8038687705993652,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.16666666666666666,
+        "rerank_score": 0.75
+      },
+      {
+        "text": "Tony. He always gets the good stuff, doesn't he?\nI was so happy when he came home.\nIt was like we got him back from the dead.\nNow I realise,\nwell, Tony never really did come home, did he?\nHe left a part of himself in that cave.\nBreaks my heart.\nWell, he's a complicated person.",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:32:36,969",
+        "end_time": "01:33:35,194",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0087",
+        "score": 0.8383760452270508,
+        "question_type": "other",
+        "semantic_score": 0.8330166355737536,
+        "keyword_score": 0.3333333333333333,
+        "rerank_score": 0.6831116449016275
+      },
+      {
+        "text": "Good boy.\nTony?\nTony?\nTony?\nTony?\nTony!",
+        "movie": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:40:11,631",
+        "end_time": "01:41:07,479",
+        "chunk_id": "Iron.Man.2008.1080p.BluRay.x265-YAWNTiC_eng_0094",
+        "score": 0.8255279064178467,
+        "question_type": "other",
+        "semantic_score": 0.8951897706046793,
+        "keyword_score": 0.16666666666666666,
+        "rerank_score": 0.6766328394232756
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The generated answer states 'I refuse.' as Tony's response, but the evidence only shows 'I refuse.' in the context of Tony saying 'I refuse' to something else mentioned in the subtitles, not directly after returning home from captivity. The evidence does not provide any information about what Tony says after he returns home from captivity."
+  },
+  {
+    "id": 15,
+    "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Ivan Vanko want from Tony Stark?",
+    "category": "character_interaction",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Ivan Vanko wants his \"bird,\" which is likely a reference to the aircraft Tony Stark's company, Stark Industries, specializes in. However, Ivan also expresses concern about Stark and his company's reputation, suggesting he may have ulterior motives related to Stark's position as Iron Man.",
+    "citations": [
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 00:29:51,957 -> 00:30:11,310]",
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 00:46:40,131 -> 00:47:37,647]",
+      "[Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng — 01:54:34,618 -> 01:55:33,844]"
+    ],
+    "evidence": [
+      {
+        "text": "- Okay, get him. I need Happy. - Right away.\nTony's... You know, he...\nWe're not competitive. You know what I mean?\nYeah, yeah, yeah. You know,\n- can you excuse me just one second? - Just read me what you wrote.\n- I will. I will, after. - Just read it back to me.\nBut I have to make one quick phone call.\n- Where are you going? - This is great.\n- I've got some caviar coming. - This is great stuff.\n- I'll be right back. - Look!\nThat's Stark.",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:29:51,957",
+        "end_time": "00:30:11,310",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0029",
+        "score": 0.9279813766479492,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.4,
+        "rerank_score": 0.82
+      },
+      {
+        "text": "- A bird? You want a bird? - I want my bird.\nI can get you a bird. I can get you 10 birds.\nI want my bird.\nWell, okay. Nothing's impossible. I could...\nAre we talking about... Is this a bird back in Russia?\nYes, but the fundamentals of the company are still very, very strong\n- despite the events in Monaco. - Yes, of course.\n- The AP wants a quote. - Don't tell him. Fax them...\nWhere is he?\n- He doesn't want to be disturbed. - He's downstairs.\n- ...what happened in Monaco? - Yes, but...\nBut his continuing erratic behavior\nmay lead many people to ask themselves,\n\"Can this man still protect us?\"\nIron Man never stopped protecting us. The events in Monaco proved that.\nQuery complete, sir. Anton Vanko was a Soviet physicist\nwho defected to the United States in 1963.\nHowever, he was accused of espionage and was deported in 1967.\nHis son, Ivan, who is also a physicist,\nwas convicted of selling Soviet-era weapons-grade plutonium to Pakistan,",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:46:40,131",
+        "end_time": "00:47:37,647",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0042",
+        "score": 1.001761794090271,
+        "question_type": "other",
+        "semantic_score": 0.7123285761097671,
+        "keyword_score": 0.6,
+        "rerank_score": 0.6786300032768369
+      },
+      {
+        "text": "I don't think I want you looking at that.\nI'm not sure it pertains to you anymore.\nNow this, on the other hand, is Agent Romanoff's assessment of you.\nRead it.\n\"Personality overview. Mr. Stark displays compulsive behavior.\"\nIn my own defense, that was last week.\n\"Prone to self-destructive tendencies.\" I was dying.\nI mean, please. And aren't we all?\n\"Textbook narcissism\"?\nAgreed.\nOkay, here it is.\n\"Recruitment assessment for Avenger Initiative. Iron Man? Yes.\"\n- I gotta think about it. - Read on.\n\"Tony Stark not...\n\"Not recommended\"?\nThat doesn't make any sense.\nHow can you approve me but not approve me?\nI got a new ticker.\nI'm trying to do right by Pepper.",
+        "movie": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:54:34,618",
+        "end_time": "01:55:33,844",
+        "chunk_id": "Iron.Man.2.2010.1080p.BluRay.x265-YAWNTiC_eng_0110",
+        "score": 1.103513479232788,
+        "question_type": "other",
+        "semantic_score": 0.3155965818639857,
+        "keyword_score": 0.6,
+        "rerank_score": 0.40091760730479
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer introduces new characters and motivations not present in the evidence, such as Ivan Vanko's desire for Stark's aircraft and his ulterior motives related to Stark's position as Iron Man. These are not supported by the evidence."
+  },
+  {
+    "id": 16,
+    "movie": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What does Tony tell the Mandarin?",
+    "category": "dialogue",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Tony tells the Mandarin that he is the Mandarin and that the Mandarin just died.",
+    "citations": [
+      "[Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng — 01:52:46,218 -> 01:53:32,807]",
+      "[Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng — 00:28:07,728 -> 00:29:06,162]",
+      "[Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng — 00:28:57,778 -> 00:29:55,753]"
+    ],
+    "evidence": [
+      {
+        "text": "No more false faces.\nYou said you wanted the Mandarin.\nYou're looking right at him.\nIt was always me, Tony. Right from the start.\nI am the Mandarin!\nI got nothing.\nJarvis, subject at my 12 o'clock is not a target, disengage!\nWhat? What, are you mad at me?",
+        "movie": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:52:46,218",
+        "end_time": "01:53:32,807",
+        "chunk_id": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng_0113",
+        "score": 0.7931150197982788,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.6666666666666666,
+        "rerank_score": 0.8999999999999999
+      },
+      {
+        "text": "Hi.\nDo you mind leaving that on?\nSure.\nSunday nights. PBS. Downton Abbey.\nThat's his show. He thinks it's elegant.\nOne more thing. Make sure everyone wears their badges.\nHe's a stickler for that sort of thing.\nPlus, my guys won't let anyone in without them.\nWe're awaiting the arrival of Tony Stark.\nWe're hoping he'll give us the reaction...\nHis reaction to the latest attack.\nMr Stark, hi there.\nOur sources are telling us that all signs are pointing to another Mandarin attack.\nAnything else you can tell us?\nHey, Mr Stark. When is somebody gonna kill this guy?\nI'm just saying.\nIs that what you want?\nHere's a little holiday greeting\nI've been wanting to send to the Mandarin.",
+        "movie": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:28:07,728",
+        "end_time": "00:29:06,162",
+        "chunk_id": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng_0031",
+        "score": 0.9315900802612305,
+        "question_type": "other",
+        "semantic_score": 0.5091312150768051,
+        "keyword_score": 1.0,
+        "rerank_score": 0.6563918505537636
+      },
+      {
+        "text": "Is that what you want?\nHere's a little holiday greeting\nI've been wanting to send to the Mandarin.\nI just didn't know how to phrase it until now.\nMy name is Tony Stark and I'm not afraid of you.\nI know you're a coward. So I've decided\nthat you just died, pal.\nI'm gonna come get the body.\nThere's no politics here. It's just good old-fashioned revenge.\nThere's no Pentagon, it's just you and me.\nAnd on the off chance you're a man, here's my home address.\n10880 Malibu Point.\n90265.\nI'll leave the door unlocked.\nThat's what you wanted, right?\nBill me.\nI've compiled a Mandarin database for you, sir,\ndrawn from S.H.I.E.L.D., FBI and CIA intercepts.",
+        "movie": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "00:28:57,778",
+        "end_time": "00:29:55,753",
+        "chunk_id": "Iron.Man.3.2013.1080p.BluRay.x265-YAWNTiC_eng_0032",
+        "score": 0.9686207175254822,
+        "question_type": "other",
+        "semantic_score": 0.3778643728160788,
+        "keyword_score": 0.6666666666666666,
+        "rerank_score": 0.4645050609712551
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The generated answer introduces new characters (Jarvis, Mr Stark) and events (Tony Stark compiling a Mandarin database) not present in the provided subtitles, making it unsupported by the evidence."
+  },
+  {
+    "id": 17,
+    "movie": "Avengers.Age.of.Ultron.2015.Bluray-1080p.en",
+    "question": "What does Ultron say about humanity?",
+    "category": "character",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "Ultron says that humanity is what's wrong with the world, and he believes they are monsters. He thinks humanity needs to evolve rather than be protected.",
+    "citations": [
+      "[Avengers Age of Ultron (2015) Bluray-1080p.en — 01:38:22,900 -> 01:39:18,741]",
+      "[Avengers Age of Ultron (2015) Bluray-1080p.en — 01:13:44,580 -> 01:14:41,106]",
+      "[Avengers Age of Ultron (2015) Bluray-1080p.en — 01:14:34,580 -> 01:15:34,305]"
+    ],
+    "evidence": [
+      {
+        "text": "Ultron thinks we're monsters.\nThat we're what's wrong with the world.\nThis isn't just about beating him.\nIt's about whether he's right.\nNatasha!\nNatasha!\nBruce?\nYou all right?\nYeah.\nThe team is in the city. It's about to light up.\nI don't suppose you found a key lying around somewhere.\nYeah. I did.\nSo what's our play?\nI'm here to get you to safety.\n- Job's not finished. - We could help with the evacuation,\nbut I can't be in a fight near civilians.\nAnd you've done plenty.\nOur fight is over.\nSo, we just disappear?",
+        "movie": "Avengers Age of Ultron (2015) Bluray-1080p.en",
+        "start_time": "01:38:22,900",
+        "end_time": "01:39:18,741",
+        "chunk_id": "Avengers Age of Ultron (2015) Bluray-1080p.en_0097",
+        "score": 0.725134551525116,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.5,
+        "rerank_score": 0.85
+      },
+      {
+        "text": "You know what, Romanoff?\nSo, what does he want?\nTo become better.\nBetter than us.\n- He keeps building bodies. - Person bodies.\nThe human form is inefficient.\nBiologically speaking, we're outmoded.\nBut he keeps coming back to it.\nWhen you two programmed him to protect the human race,\nyou amazingly failed.\nThey don't need to be protected.\nThey need to evolve.\nUltron's going to evolve.\nHow?\nHas anyone been in contact with Helen Cho?\nIt's beautiful.\nThe vibranium atoms aren't just compatible with the tissue cells,\nthey're binding them.\nAnd S.H.I.E.L.D. never even thought to...\nThe most versatile substance on the planet,\nand they used it to make a Frisbee.\nTypical of humans.\nThey scratch the surface and never think",
+        "movie": "Avengers Age of Ultron (2015) Bluray-1080p.en",
+        "start_time": "01:13:44,580",
+        "end_time": "01:14:41,106",
+        "chunk_id": "Avengers Age of Ultron (2015) Bluray-1080p.en_0073",
+        "score": 0.7868944406509399,
+        "question_type": "other",
+        "semantic_score": 0.3407496104593494,
+        "keyword_score": 0.25,
+        "rerank_score": 0.3135247273215445
+      },
+      {
+        "text": "and they used it to make a Frisbee.\nTypical of humans.\nThey scratch the surface and never think\nto look within.\nI'll take Natasha and Clint.\nAll right. Strictly recon. I'll hit the Nexus. I'll join you as soon as I can.\nIf Ultron's really building a body...\nHe'll be more powerful than any of us.\nMaybe all of us.\nAn android designed by a robot.\nYou know, I really miss the days\nwhen the weirdest thing science ever created was me.\nI'll drop Banner off at the tower.\nYou mind if I borrow Ms Hill?\nShe's all yours. Apparently.\nWhat are you gonna do?\nI don't know. Something dramatic, I hope.\nI'm gonna finish reflooring that sunroom as soon as I get back.\nYeah, then you'll find another part of the house to tear apart.\nNo.\nIt's the last project.",
+        "movie": "Avengers Age of Ultron (2015) Bluray-1080p.en",
+        "start_time": "01:14:34,580",
+        "end_time": "01:15:34,305",
+        "chunk_id": "Avengers Age of Ultron (2015) Bluray-1080p.en_0074",
+        "score": 0.7902206778526306,
+        "question_type": "other",
+        "semantic_score": 0.3052439901942009,
+        "keyword_score": 0.25,
+        "rerank_score": 0.28867079313594063
+      }
+    ],
+    "answer_correct": false,
+    "grounded": true,
+    "unsupported_claims": false,
+    "judge_reason": "The generated answer includes claims not explicitly supported by the evidence. Specifically, it states that Ultron thinks humanity needs to evolve rather than be protected, which is not directly supported by the evidence provided."
+  },
+  {
+    "id": 18,
+    "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+    "question": "What happens after Thor arrives in Wakanda?",
+    "category": "temporal",
+    "expected_behavior": "answer",
+    "actual_status": "success",
+    "behavior_correct": true,
+    "answer": "After Thor arrives in Wakanda, he is told to go up. Then Captain America (Steve Rogers) instructs Thor to open the barrier in the North-West Section Seventeen on his signal. The intention is to keep enemies in front of them, ending with Wakanda forever. Thor is then found to be dying and needs the axe to survive.",
+    "citations": [
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 02:12:41,204 -> 02:13:32,046]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:40:22,309 -> 01:41:20,951]",
+      "[Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng — 01:43:40,632 -> 01:44:01,778]"
+    ],
+    "evidence": [
+      {
+        "text": "Where'd he go?\nThor.\nWhere'd he go?\nSteve?\nUp, General. Up!\nThis is no place to die.",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "02:12:41,204",
+        "end_time": "02:13:32,046",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0131",
+        "score": 0.9167293310165405,
+        "question_type": "other",
+        "semantic_score": 1.0,
+        "keyword_score": 0.2,
+        "rerank_score": 0.76
+      },
+      {
+        "text": "Cap, if these things circle the perimeter\nand get in behind us...\nthere's nothing between them and Vision.\nThen we better keep 'em in front of us.\nHow do we do that?\nWe open the barrier.\nOn my signal, open North-West Section Seventeen.\nRequesting confirmation, My King.\nYou said open the barrier?\nOn my signal.\nThis will be the end of Wakanda.\nThen it will be the noblest ending in history.\nWakanda forever!\nNow!",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:40:22,309",
+        "end_time": "01:41:20,951",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0103",
+        "score": 0.9266171455383301,
+        "question_type": "other",
+        "semantic_score": 0.9640935865418373,
+        "keyword_score": 0.2,
+        "rerank_score": 0.7348655105792861
+      },
+      {
+        "text": "Thor! Say something. Come on.\nThor, you okay?\nI think he's dying.\nHe needs the axe!\nWhere's the handle?\nTree, help me find the handle!",
+        "movie": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng",
+        "start_time": "01:43:40,632",
+        "end_time": "01:44:01,778",
+        "chunk_id": "Avengers.Infinity.War.2018.1080p.BluRay.x265-YAWNTiC_eng_0105",
+        "score": 1.0173933506011963,
+        "question_type": "other",
+        "semantic_score": 0.6344506766786449,
+        "keyword_score": 0.2,
+        "rerank_score": 0.5041154736750514
+      }
+    ],
+    "answer_correct": false,
+    "grounded": false,
+    "unsupported_claims": true,
+    "judge_reason": "The answer contains claims not supported by the evidence, such as Thor arriving in Wakanda and being told to go up, which is not mentioned in the evidence. The answer also includes new names and events not present in the evidence, such as Captain America (Steve Rogers) and the intention of keeping enemies in front of them."
+  },
+  {
+    "id": 19,
+    "movie": "Spider-Man",
+    "question": "What happens to Spider-Man?",
+    "category": "unknown_movie",
+    "expected_behavior": "movie_not_found",
+    "actual_status": "not_found",
+    "behavior_correct": true,
+    "answer": null,
+    "citations": [],
+    "evidence": [],
+    "answer_correct": null,
+    "grounded": null,
+    "unsupported_claims": null,
+    "judge_reason": "No generated answer to evaluate."
+  },
+  {
+    "id": 20,
+    "movie": null,
+    "question": "What does Thanos want?",
+    "category": "missing_movie",
+    "expected_behavior": "clarification",
+    "actual_status": "clarification",
+    "behavior_correct": true,
+    "answer": null,
+    "citations": [],
+    "evidence": [],
+    "answer_correct": null,
+    "grounded": null,
+    "unsupported_claims": null,
+    "judge_reason": "No generated answer to evaluate."
+  }
+]
